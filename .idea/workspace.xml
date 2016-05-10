@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95fea63c-3cb3-4ef3-a40f-d41fac44b685" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
@@ -56,8 +55,8 @@
       <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="112">
+              <caret line="8" column="37" selection-start-line="3" selection-start-column="4" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -386,14 +385,7 @@
       <workItem from="1462845204563" duration="217000" />
       <workItem from="1462865730581" duration="7693000" />
       <workItem from="1462887856683" duration="1325000" />
-      <workItem from="1462890302363" duration="857000" />
-    </task>
-    <task id="LOCAL-00060" summary="update 3 existing themes">
-      <created>1460710016841</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1460710016841</updated>
+      <workItem from="1462890302363" duration="877000" />
     </task>
     <task id="LOCAL-00061" summary="update 3 existing themes">
       <created>1460715140312</created>
@@ -731,11 +723,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462890630718</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="first commit">
+      <created>1462891314991</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1462891314991</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235847000" />
+    <option name="totallyTimeSpent" value="235867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1320" height="745" extended-state="6" />
@@ -1159,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="112">
+          <caret line="8" column="37" selection-start-line="3" selection-start-column="4" selection-end-line="8" selection-end-column="37" />
           <folding />
         </state>
       </provider>
