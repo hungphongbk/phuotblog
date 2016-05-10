@@ -1,0 +1,12 @@
+
+<?php \Laravel\Section::start('content'); ?>
+    <div class="container" id="main-content-area">
+        <main class="main sidebar" role="main">
+            <?php echo \Laravel\Section::do_yield('page-content'); ?>
+        </main><!-- /.main -->
+        <aside id="secondary" class="sidebar" role="complementary">
+            <?php echo  dynamic_sidebar('sidebar-primary') ; ?>
+        </aside><!-- /.sidebar -->
+    </div>
+<?php \Laravel\Section::stop(); ?>
+<?php echo view('templates.layouts.base')->with(get_defined_vars())->render(); ?>

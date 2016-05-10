@@ -1,0 +1,96 @@
+.widget {
+
+}
+
+#secondary .widget {
+  margin-bottom: 60px;
+  overflow: hidden;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > h3 {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+
+    color: $text-color-lighten-20;
+  }
+
+  .widget-title {
+    position: relative;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 3em;
+      background: $base-theme-dark-color;
+    }
+  }
+}
+
+.widget.phuot-aboutme {
+  .avatar {
+    width: 70%;
+    margin: 0 auto 1em;
+  }
+  .intro {
+    font-size: 0.9em;
+    color: $text-color-lighten-10;
+  }
+  .social-accounts {
+    text-align: center;
+    -webkit-padding-start: 0;
+
+    li {
+      display: inline-block;
+
+      margin-right: 0.3em;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+      }
+    }
+  }
+  .social-item {
+    $size: 40px;
+
+    width: $size;
+    height: $size;
+    border: 2px solid $text-link-color;
+    border-radius: 50%;
+
+    a {
+      width: $size;
+      height: $size;
+      background: transparent;
+      border-radius: 50%;
+      margin: -2px;
+      line-height: $size;
+    }
+
+    a:hover, a:focus {
+      color: white;
+    }
+  }
+  .social_facebook:hover a{
+    background: #3b5998;
+  }
+  .social_google:hover a{
+    background: #e14d43;
+  }
+  .social_instagram:hover a {
+    background: #a17357;
+  }
+}

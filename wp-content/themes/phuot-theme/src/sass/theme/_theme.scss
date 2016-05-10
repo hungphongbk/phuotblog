@@ -1,0 +1,20 @@
+// Base typography for whole theme - inherited from body tag
+@import "resetBootstrap";
+
+body.phuot-theme {
+  @include font('base');
+  color: $text-color;
+  line-height: 2;
+
+  background-color: #fafafa;
+}
+
+.phuot-theme {
+  @import "typography";
+  @import "nav";
+
+  @import "content";
+  @import "widgets";
+  @import "controls/controls";
+  @import "custom";
+}

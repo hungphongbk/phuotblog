@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bc405af6-004c-45cf-b99f-9b7c3c8fb66a" name="DinhNguyen-server" url="http://104.238.183.26:1994">
+        <fileTransfer host="104.238.183.26" port="22" rootFolder="/home/atporntube.com/public_html/wp-content" accessType="SFTP" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="bf63d4f6-8a22-44d1-8a58-1da427672d61" name="hungphongbk-blog" url="http://188.166.218.133/blog">
+        <fileTransfer host="188.166.218.133" port="22" rootFolder="/root/html" accessType="SFTP" password="dfc2dfdfdfc4dfcddffadfc2dfc5dfc4dfcddf9bdf80df8bdfea" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

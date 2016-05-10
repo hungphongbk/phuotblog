@@ -1,0 +1,18 @@
+.rateit {
+  @function generateStar($filename, $background: '#fff') {
+    @return inline_svg('src/images/rateit/#{$filename}', ('fillcolor': $background));
+  }
+
+  .rateit-range {
+    background-image: generateStar('preset.svg', inspect($text-color-lighten-60));
+    background-size: contain;
+
+    .rateit-preset, .rateit-selected {
+      background-image: generateStar('preset.svg', inspect($text-theme-color));
+      background-size: contain;
+    }
+    .rateit-hover {
+      background-image: generateStar('preset.svg');
+    }
+  }
+}

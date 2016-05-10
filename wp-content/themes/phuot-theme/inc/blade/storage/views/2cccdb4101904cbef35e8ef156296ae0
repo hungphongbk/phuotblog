@@ -1,0 +1,16 @@
+<div class="overlay hover-anim-wrapper">
+    <a href="<?php echo  the_permalink() ; ?>">
+        <?php echo  the_post_thumbnail($thumbnail_size, array('class' => 'hover-anim')) ; ?>
+        <p class="hidden"><?php echo  $thumbnail_size ; ?></p>
+        <div class="featured-text">
+            <h5><?php echo  hpbk_get_featured_post_category($post->ID, 'name') ; ?></h5>
+            <?php if($thumbnail_size == 'large'): ?>
+                <h2><?php echo  the_title() ; ?></h2>
+            <?php else: ?>
+                <h4><?php echo  the_title() ; ?></h4>
+            <?php endif; ?>
+            <p class="intro"><?php echo  get_the_excerpt() ; ?></p>
+        </div>
+    </a>
+
+</div>

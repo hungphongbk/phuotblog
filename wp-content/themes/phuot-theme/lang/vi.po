@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Phuot Theme - Vietnamese translation\n"
+"POT-Creation-Date: 2016-04-23 17:02+0700\n"
+"PO-Revision-Date: 2016-04-23 17:02+0700\n"
+"Last-Translator: \n"
+"Language-Team: Hung Phong <programmingd32@gmail.com>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: templates\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: src\n"
+
+#: functions.php:32
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr "Không thể include file %s - file không tìm thấy"
+
+#: inc/init.php:13
+msgid "Primary Navigation"
+msgstr "Widget chính"
+
+#: inc/init.php:52
+msgid "Primary"
+msgstr ""
+
+#: inc/init.php:61
+msgid "Footer"
+msgstr "Widget cuối trang"
+
+#: inc/widgets.php:101 inc/widgets.php:124 inc/widgets.php:143
+#: inc/widgets.php:162
+msgid "About Me"
+msgstr "Về bản thân tôi"
+
+#: inc/widgets.php:146
+#, php-format
+msgid "Plugin <b>%s</b> has been updated!"
+msgstr "Plugin <b>%s</b> đã được cập nhật!"
+
+#: inc/widgets.php:165
+msgid "Just a simple widget that allow you to introduce about yourself"
+msgstr "Chỉ là một widget đơn giản cho phép tôi giới thiệu về bản thân"
+
+#: templates/content/index.blade.php:8
+msgid "Sorry, no results were found."
+msgstr "Xin lỗi bạn, trang/bài viết bạn vừa yêu cầu không tồn tại."
+
+#: templates/content/index.blade.php:16
+msgid "&larr; Older posts"
+msgstr "&larr; Bài viết cũ hơn"
+
+#: templates/content/index.blade.php:17
+msgid "Newer posts &rarr;"
+msgstr "Bài viết mới hơn &rarr;"
+
+#: templates/widgets/widget-aboutme-form.blade.php:3
+msgid "Title:"
+msgstr "Tiêu đề:"
+
+#: templates/widgets/widget-aboutme-form.blade.php:10
+msgid "Your favorite avatar:"
+msgstr "Avatar yêu thích của bạn:"
+
+#: templates/widgets/widget-aboutme-form.blade.php:15
+msgid "Upload image"
+msgstr "Tải ảnh lên"
+
+#: templates/widgets/widget-aboutme-form.blade.php:20
+msgid "Introduction"
+msgstr "Giới thiệu về bạn"
+
+#~ msgid "Plugin %s has been updated!"
+#~ msgstr "Plugin %s đã được cập nhật!"
+
+#~ msgid "Published by"
+#~ msgstr "Đăng bởi"
+
+#~ msgid "New title"
+#~ msgstr "Tiêu đề mới"
+
+#~ msgid "Not enough arguments following: %s"
+#~ msgstr "Không đủ số lượng Argument cần thiết :%s"
+
+#~ msgid "Invalid JSON config file: %s"
+#~ msgstr "Tập tin JSON config không hợp lệ : %s"

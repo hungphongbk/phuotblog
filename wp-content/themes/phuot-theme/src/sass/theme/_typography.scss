@@ -1,0 +1,24 @@
+#{headings(1,6)} {
+  color: $text-medium-header-color;
+  @include font('medium-header');
+  margin: 20px 0;
+}
+#{headings(1,3)} {
+  color: $text-large-header-color;
+  @include font('large-header');
+}
+
+a {
+  color: $text-link-color;
+  @include reset-a-decoration;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:hover, &:focus {
+    color: $text-link-color-hover;
+    @include reset-a-decoration;
+  }
+}

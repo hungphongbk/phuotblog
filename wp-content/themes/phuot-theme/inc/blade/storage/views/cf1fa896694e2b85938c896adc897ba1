@@ -1,0 +1,5 @@
+<?php if(hpbk_blade_template_exists('templates.content.content-'.get_post_format())): ?>
+    <?php echo view('templates.content.content-'.get_post_format())->with(get_defined_vars())->render(); ?>
+<?php else: ?>
+    <?php echo view('templates.content.content-general')->with(get_defined_vars())->render(); ?>
+<?php endif; ?>

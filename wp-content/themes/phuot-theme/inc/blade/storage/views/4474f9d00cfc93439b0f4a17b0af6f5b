@@ -1,0 +1,22 @@
+<?php // gallery.blade.php ?>
+<div class="gallery-carousel-wrapper">
+    <div class="gallery galleryid-<?php echo  $id ; ?> gallery-carousel">
+        <div class="ratio-16-9">
+            <div class="content">
+                <div class="slides">
+                    <?php foreach($attachments as $id => $attachment): ?>
+                        <div class="slide">
+                            <?php echo  wp_get_attachment_image($id, 'gallery-carousel-slide', false) ; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+        <ul class="navigations">
+            <?php foreach($attachments as $id => $attachment): ?>
+                <li>
+                <?php echo  wp_get_attachment_image($id, 'gallery-carousel-thumbnail', false) ; ?>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+
+<?php \Laravel\Section::start('content'); ?>
+    <div id="top-content-area">
+        <?php echo \Laravel\Section::do_yield('top-content'); ?>
+    </div>
+    <main class="main" role="main" id="main-content-area">
+        <?php echo \Laravel\Section::do_yield('page-content'); ?>
+    </main><!-- /.main -->
+<?php \Laravel\Section::stop(); ?>
+<?php echo view('templates.layouts.base')->with(get_defined_vars())->render(); ?>

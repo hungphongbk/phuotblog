@@ -1,0 +1,85 @@
+// Path
+$imagePath: '../images/';
+@function getAsset($path){
+  @return $imagePath+$path;
+}
+
+// Fonts
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src: url("../fonts/Lato-Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  src: url("../fonts/Lato-Bold.ttf") format('truetype');
+}
+
+$theme-fonts: (
+  font-large-header: (
+    font-family: "'Lato', sans-serif",
+    font-weight: "400",
+  ),
+  font-medium-header: (
+    font-family: "'Lato', sans-serif",
+    font-weight: "700",
+  ),
+  font-base: (
+    font-family: "'Noto Serif', serif",
+    font-weight: "400",
+  )
+);
+
+// Margin and padding
+
+// Font sizes
+$text-larger-fontsize: 16px;
+$text-basic-fontsize: 14px;
+$text-smaller-fontsize: 13px;
+
+
+// Colors
+$base-dark-color: #404040;
+$base-light-color: #FFFFFF;
+$base-theme-dark-color: #00796B;
+$base-theme-light-color: #B2DFDB;
+$base-grey-dark-color: #263238;
+
+// Text color - based on basic colors defined above
+$text-color: $base-dark-color;
+$text-color-darken-10: darken($text-color, 10%);
+$text-color-darken-20: darken($text-color, 20%);
+$text-color-lighten-10: lighten($text-color, 10%);
+$text-color-lighten-20: lighten($text-color, 20%);
+$text-color-lighten-30: lighten($text-color, 30%);
+$text-color-lighten-40: lighten($text-color, 40%);
+$text-color-lighten-50: lighten($text-color, 50%);
+$text-color-lighten-60: lighten($text-color, 60%);
+
+$text-theme-color: $base-theme-dark-color;
+$text-theme-color-lighten-10: lighten($text-theme-color, 10%);
+$text-theme-color-lighten-20: lighten($text-theme-color, 20%);
+
+$text-large-header-color: $text-color-lighten-40;
+$text-medium-header-color: $text-color-lighten-20;
+
+$text-link-color: $text-color-lighten-40;
+$text-link-color-hover: $text-theme-color;
+
+// NavBar
+$navbar-link-color: $text-color-darken-20;
+$navbar-link-color-hover: $text-theme-color;
+$navbar-link-fontsize: $text-smaller-fontsize;
+$navbar-item-hover-background-color: $base-theme-dark-color;
+$navbar-dropdown-link-color: $text-color-lighten-50;
+$navbar-dropdown-link-color-hover: $base-light-color;
+$navbar-background-color: rgba($base-light-color, 0.85);
+
+$navbar-dark-link-color: $base-light-color;
+$navbar-dark-link-color-hover: $base-light-color;
+$navbar-dark-item-hover-background-color: $base-theme-dark-color;
+$navbar-dark-dropdown-link-color: $base_light-color;
+$navbar-dark-dropdown-link-color-hover: $base-light-color;
+$navbar-dark-background-color: $base-grey-dark-color;

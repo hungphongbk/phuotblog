@@ -1,0 +1,81 @@
+$ratios: 16 4, 16 9, 4 3, 1 1;
+@each $width, $height in $ratios {
+  .ratio-#{$width}-#{$height} {
+    @include aspect-ratio($width, $height);
+  }
+}
+
+
+body {
+  word-wrap: break-word;
+}
+
+p {
+  margin: 15px 0;
+}
+
+* > p:first-child {
+  margin-top: 0;
+}
+* > p:last-child {
+  margin-bottom: 0;
+}
+ul, ol {
+  list-style-type: none;
+}
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+// NavBar
+
+
+.navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.navbar-nav > li > .dropdown-menu {
+  padding: 0;
+}
+.dropdown-menu {
+  border: none;
+}
+.navbar-default .navbar-nav {
+  > .open {
+    > a, >a:hover, >a:focus {
+      border-right: none;
+      border-left: none;
+    }
+  }
+}
+.navbar-collapse {
+  float: left;
+  padding: 0;
+}
+.nav-search {
+  float: right;
+  padding: 18px 0;
+}
+.nav-search input {
+  border: 0;
+}
+.dropdown-menu {
+  box-shadow: none;
+}
+
+// Content
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.page-header {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-header {
+    float: left;
+  }
+}

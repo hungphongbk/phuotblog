@@ -1,0 +1,160 @@
+%drop {
+  > li {
+    >a:hover, >a:focus {
+      color: $base-light-color;
+      background-color: $navbar-item-hover-background-color;
+    }
+  }
+}
+%drop-dark {
+  > li {
+    >a:hover, >a:focus {
+      color: $base-light-color;
+      background-color: $navbar-dark-item-hover-background-color;
+    }
+  }
+}
+%dropnoneborder {
+  border: none;
+}
+%dropactivecolor {
+  background-color: $navbar-item-hover-background-color;
+  color: $navbar-dropdown-link-color-hover;
+}
+%drop-dark-activecolor {
+  background-color: $navbar-dark-item-hover-background-color;
+  color: $navbar-dark-dropdown-link-color-hover;
+}
+
+.nav-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.nav > li >a {
+  text-transform: uppercase;
+}
+
+.navbar.navbar-default {
+  background-color: $navbar-background-color;
+  @include font('medium-header');
+  font-size: $text-basic-fontsize;
+  margin-bottom: 0;
+  padding: 0 40px;
+
+  border: none;
+}
+
+.dropdown-menu > li > a {
+  padding: 10px 15px;
+  color: #636467;
+}
+.dropdown-menu {
+  font-size: 15px;
+}
+
+.navbar-default .navbar-nav {
+  > li > a {
+    color: $navbar-link-color;
+    font-size: $navbar-link-fontsize;
+    padding: 20px 0;
+    margin-right: 25px;
+    line-height: 2.6;
+    letter-spacing: 1px;
+  }
+
+  %nav-active {
+    > a, >a:hover, >a:focus {
+      color: $text-theme-color;
+      background-color: transparent;
+    }
+  }
+
+  > .active {
+    @extend %nav-active;
+  }
+
+  > .open {
+    @extend %nav-active;
+
+    .dropdown-menu {
+      > li.active > a {
+        color: $navbar-dropdown-link-color-hover;
+      }
+
+      > li > a {
+        color: $navbar-dropdown-link-color;
+      }
+    }
+  }
+
+  > li {
+    >a:hover, >a:focus {
+      color: $text-theme-color;
+      background-color: transparent;
+    }
+  }
+
+  .open .dropdown-menu {
+    @extend %drop;
+  }
+}
+
+.dropdown-menu {
+  @extend %dropnoneborder;
+  @extend %drop;
+  > .active {
+    > a, >a:hover, >a:focus {
+      @extend %dropnoneborder;
+      @extend %dropactivecolor;
+    }
+  }
+}
+
+.navbar-default.dark-theme {
+  background-color: $navbar-dark-background-color;
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-dark-link-color;
+
+      &:hover, &:focus {
+        color: $navbar-dark-link-color;
+      }
+    }
+
+    //%nav-dark-active {
+    //  >a, >a:hover, >a:focus {
+    //    color: $navbar-link-color;
+    //  }
+    //}
+    //> .active {
+    //  @extend %nav-dark-active;
+    //}
+    //> .open {
+    //  @extend %nav-dark-active;
+    //
+    //  .dropdown-menu {
+    //    > li.active > a {
+    //      color: $navbar-dropdown-link-color-hover;
+    //    }
+    //
+    //    > li > a {
+    //      color: $navbar-dropdown-link-color;
+    //    }
+    //  }
+    //}
+  }
+
+  .dropdown-menu {
+    > li > a {
+      color: $navbar-dark-link-color;
+    }
+    @extend %drop-dark;
+    > .active {
+      > a, >a:hover, >a:focus {
+        @extend %drop-dark-activecolor;
+      }
+    }
+  }
+}

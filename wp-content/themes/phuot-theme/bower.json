@@ -1,0 +1,22 @@
+{
+  "name": "phuot-theme",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Trương Phong <programmingd32@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "flexslider": "^2.6.0"
+  }
+}

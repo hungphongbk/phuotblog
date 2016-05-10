@@ -1,0 +1,15 @@
+
+<?php \Laravel\Section::start('content'); ?>
+    <div id="top-content-area">
+        <?php echo \Laravel\Section::do_yield('top-content'); ?>
+    </div>
+    <div id="main-content-area" class="clearfix">
+        <main class="main sidebar" role="main">
+            <?php echo \Laravel\Section::do_yield('page-content'); ?>
+        </main><!-- /.main -->
+        <aside id="secondary" class="sidebar" role="complementary">
+            <?php echo view('templates.includes.sidebar')->with(get_defined_vars())->render(); ?>
+        </aside><!-- /.sidebar -->
+    </div>
+<?php \Laravel\Section::stop(); ?>
+<?php echo view('templates.layouts.base')->with(get_defined_vars())->render(); ?>

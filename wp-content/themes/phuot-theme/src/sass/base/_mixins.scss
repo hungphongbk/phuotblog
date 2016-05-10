@@ -1,0 +1,36 @@
+@mixin font($selector){
+  $properties: map_get($theme-fonts, font-#{$selector});
+  @each $prop, $value in $properties{
+    #{$prop}: unquote($value);
+  }
+}
+
+@function headings($from: 1, $to: 6) {
+  @if $from == $to {
+    @return 'h#{$from},.h#{$from}';
+  } @else {
+    @return 'h#{$from},.h#{$from},' + headings($from+1, $to);
+  }
+}
+
+@mixin reset-a-decoration() {
+  text-decoration: none;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+}

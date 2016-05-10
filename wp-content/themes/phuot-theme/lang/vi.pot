@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Phuot Theme - Vietnamese translation\n"
+"POT-Creation-Date: 2016-04-14 15:26+0700\n"
+"PO-Revision-Date: 2016-04-14 15:26+0700\n"
+"Last-Translator: \n"
+"Language-Team: Hung Phong <programmingd32@gmail.com>\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: src/vendor\n"
+
+#: inc/customizer.php:24
+msgid "Additional Settings"
+msgstr "Các thiết lập tuỳ chỉnh khác"
+
+#: inc/customizer.php:32
+msgid "Header Image"
+msgstr "Cover đầu trang"
+
+#: inc/init.php:15
+msgid "Primary Navigation"
+msgstr ""
+
+#: inc/init.php:44
+msgid "Primary"
+msgstr ""
+
+#: inc/init.php:53
+msgid "Footer"
+msgstr "Trình đơn cuối trang"
+
+#~ msgid "Not enough arguments following: %s"
+#~ msgstr "Không đủ số lượng Argument cần thiết :%s"
+
+#~ msgid "Invalid JSON config file: %s"
+#~ msgstr "Tập tin JSON config không hợp lệ : %s"

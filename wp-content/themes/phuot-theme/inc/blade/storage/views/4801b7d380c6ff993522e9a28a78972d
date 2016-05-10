@@ -1,0 +1,18 @@
+<article <?php echo  post_class('hover-anim-wrapper') ; ?>>
+  <header>
+    <div class="ratio-16-9">
+      <div class="content">
+        <div class="overlay">
+          <a href="<?php echo  the_permalink() ; ?>">
+            <?php echo  the_post_thumbnail('medium', array('class' => 'hover-anim')) ; ?>
+          </a>
+        </div>
+      </div>
+    </div>
+    <h4 class="entry-title"><a href="<?php echo  the_permalink() ; ?>" title="<?php echo  the_title() ; ?>"><?php echo  the_title() ; ?></a></h4>
+    <?php echo view('templates.includes.entry-meta')->with(get_defined_vars())->render(); ?>
+  </header>
+  <div class="entry-summary">
+    <?php echo  the_excerpt() ; ?>
+  </div>
+</article>
