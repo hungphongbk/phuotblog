@@ -8,6 +8,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /blog/index.php [L]
 </IfModule>
+# END WordPress
+
 # BEGIN W3TC Browser Cache
 <IfModule mod_deflate.c>
     <IfModule mod_headers.c>
@@ -22,4 +24,3 @@ RewriteRule . /blog/index.php [L]
     </IfModule>
 </IfModule>
 # END W3TC Browser Cache
-# END WordPress
