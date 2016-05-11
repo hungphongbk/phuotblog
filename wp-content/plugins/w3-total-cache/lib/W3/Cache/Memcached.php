@@ -13,9 +13,10 @@ w3_require_once(W3TC_LIB_W3_DIR . '/Cache/Base.php');
  * Class W3_Cache_Memcached
  */
 class W3_Cache_Memcached extends W3_Cache_Base {
-
     /**
-     * @var Memcached|null
+     * Memcache object
+     *
+     * @var Memcache
      */
     private $_memcache = null;
 
@@ -34,37 +35,22 @@ class W3_Cache_Memcached extends W3_Cache_Base {
     function __construct($config) {
         parent::__construct($config);
 
-        $this->_memcache = new Memcached();
-        $this->_memcache->setOption(Memcached::OPT_BINARY_PROTOCOL, TRUE);
-        
-        $this->_memcache->setSaslAuthData( getenv("MEMCACHIER_USERNAME")
-            , getenv("MEMCACHIER_PASSWORD") );
+        $this->_memcache = new Memcache();
 
+        if (!empty($config['servers'])) {
+            $persistant = isset($config['persistant']) ? (boolean) $config['persistant'] : false;
 
-        if(!$this->_memcache->getServerList()) {
-            $servers = explode(",", getenv("MEMCACHIER_SERVERS"));
-            foreach ($servers as $s) {
-                $parts = explode(":", $s);
-                $this->_memcache->addServer($parts[0], $parts[1]);
+            foreach ((array) $config['servers'] as $server) {
+                if (substr($server, 0, 5) == 'unix:')
+                    $this->_memcache->addServer(trim($server), 0, $persistant);
+                else {
+                    list($ip, $port) = explode(':', $server);
+                    $this->_memcache->addServer(trim($ip), (integer) trim($port), $persistant);
+                }
             }
         } else {
             return false;
         }
-
-//        if (!empty($config['servers'])) {
-//            $persistant = isset($config['persistant']) ? (boolean) $config['persistant'] : false;
-//
-//            foreach ((array) $config['servers'] as $server) {
-//                if (substr($server, 0, 5) == 'unix:')
-//                    $this->_memcache->addServer(trim($server), 0, $persistant);
-//                else {
-//                    list($ip, $port) = explode(':', $server);
-//                    $this->_memcache->addServer(trim($ip), (integer) trim($port), $persistant);
-//                }
-//            }
-//        } else {
-//            return false;
-//        }
 
         if (!empty($config['compress_threshold'])) {
             $this->_memcache->setCompressThreshold((integer) $config['compress_threshold']);
