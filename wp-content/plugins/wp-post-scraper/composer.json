@@ -1,0 +1,12 @@
+{
+    "name": "hungphongbk/wp-post-scraper",
+    "require": {
+        "illuminate/database": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Phong Truong",
+            "email": "programmingd32@gmail.com"
+        }
+    ]
+}
