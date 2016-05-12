@@ -1,6 +1,6 @@
 <?php
 
-function starts_with($haystack, $needles)
+function blade_starts_with($haystack, $needles)
 {
 	foreach ((array) $needles as $needle)
 	{
@@ -21,7 +21,7 @@ function view($view, $data = array()){
  * @param  string|array  $needle
  * @return bool
  */
-function str_contains($haystack, $needle)
+function blade_str_contains($haystack, $needle)
 {
 	foreach ((array) $needle as $n)
 	{

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="blogphuot.hungphongbk.com" uploadOnCheckin="3fd1baad-e6ab-409d-85d5-355fe914b994">
+    <serverData>
+      <paths name="blogphuot.hungphongbk.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wp-content/plugins/wp-post-scraper" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="blogphuot.hungphongbk.com" />
+  </component>
+</project>

@@ -10,10 +10,10 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
-          <root url="file:///Applications/XAMPP/htdocs/wordpress" />
+          <root url="file://$USER_HOME$/Sites/wordpress" />
         </CLASSES>
         <SOURCES>
-          <root url="file:///Applications/XAMPP/htdocs/wordpress" />
+          <root url="file://$USER_HOME$/Sites/wordpress" />
         </SOURCES>
       </library>
     </orderEntry>

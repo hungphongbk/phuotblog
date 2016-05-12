@@ -98,7 +98,7 @@ class View implements ArrayAccess {
 		// In order to allow developers to load views outside of the normal loading
 		// conventions, we'll allow for a raw path to be given in place of the
 		// typical view name, giving total freedom on view loading.
-		if (starts_with($view, 'path: '))
+		if (blade_starts_with($view, 'path: '))
 		{
 			$this->path = substr($view, 6);
 		}
@@ -279,7 +279,7 @@ class View implements ArrayAccess {
 		// string that is prefixed with "raw|" for convenience.
 		else
 		{
-			if (starts_with($empty, 'raw|'))
+			if (blade_starts_with($empty, 'raw|'))
 			{
 				$result = substr($empty, 4);
 			}
