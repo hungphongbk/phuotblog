@@ -1,5 +1,7 @@
-<div class="wrap">
-    <h2>{{ get_admin_page_title() }}</h2>
-    <hr>
-
-</div>
+@extends('layout.base')
+@section('content')
+    <form class="form-crawl">
+        <input type="hidden" name="action" value="{{ WPPostScraper::getAction('crawl') }}">
+        <button type="submit">Crawl</button>
+    </form>
+@endsection

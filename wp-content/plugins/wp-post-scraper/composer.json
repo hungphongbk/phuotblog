@@ -3,7 +3,10 @@
     "require": {
         "illuminate/database": "^5.2",
         "illuminate/events": "^5.2",
-        "philo/laravel-blade": "^3.1"
+        "philo/laravel-blade": "^3.1",
+        "symfony/dom-crawler": "^3.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "symfony/css-selector": "^3.0"
     },
     "authors": [
         {

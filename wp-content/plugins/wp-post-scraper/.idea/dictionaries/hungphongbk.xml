@@ -4,6 +4,7 @@
       <w>classmap</w>
       <w>classpreloader</w>
       <w>textdomain</w>
+      <w>uglify</w>
       <w>wordpress</w>
       <w>wpdb</w>
     </words>

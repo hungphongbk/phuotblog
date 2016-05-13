@@ -4,6 +4,9 @@ composer.phar
 /vendor/
 /cache/*
 
+/assets/vendor
+/node_modules
+/assets/src
 # Ignore all except every gitkeep file
 !.gitkeep
 

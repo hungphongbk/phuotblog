@@ -13,6 +13,9 @@ License: A "Slug" license name e.g. GPL2
 if (!defined('WP_POST_SCRAPER_PATH')) {
     define('WP_POST_SCRAPER_PATH', dirname(__FILE__));
 }
+if (!defined('WP_POST_SCRAPER_MAIN')) {
+    define('WP_POST_SCRAPER_MAIN', __FILE__);
+}
 // for dummy
 if (!defined('DB_HOST')) {
     define('DB_HOST', 'local');
@@ -32,6 +35,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/src/WPPostScraper.php';
 require_once __DIR__ . '/src/Database.php';
 require_once __DIR__ . '/src/WPPostScraperView.php';
+require_once __DIR__ . '/src/WPPostScraperCrawler.php';
 
 $instance = new WPPostScraper();
 
