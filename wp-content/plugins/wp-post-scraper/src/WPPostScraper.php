@@ -10,9 +10,16 @@ class WPPostScraper
 {
     const PLUGIN_TEXTDOMAIN = 'wp-post-scraper';
     private $adminPageSlug = '/wp-post-scraper/admin-page.php';
+    /**
+     * @var WPPostScraperView
+     */
+    private $view;
 
     function __construct()
     {
+        if(!$this->view)
+            $this->view = WPPostScraperView::getInstance();
+
         if(is_admin()) {
             add_action('admin_init', array($this, 'adminPage'));
             add_action('admin_menu', array($this, 'adminPage_adminMenu'));
@@ -48,6 +55,6 @@ class WPPostScraper
 
     public function adminPage_content()
     {
-        include WP_POST_SCRAPER_PATH . '/views/index.php';
+        $this->view->renderView('index');
     }
 }
