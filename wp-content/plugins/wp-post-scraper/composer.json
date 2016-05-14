@@ -6,7 +6,8 @@
         "philo/laravel-blade": "^3.1",
         "symfony/dom-crawler": "^3.0",
         "guzzlehttp/guzzle": "^6.2",
-        "symfony/css-selector": "^3.0"
+        "symfony/css-selector": "^3.0",
+        "aws/aws-sdk-php": "^3.18"
     },
     "authors": [
         {
