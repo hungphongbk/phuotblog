@@ -3,10 +3,14 @@
     <words>
       <w>classmap</w>
       <w>classpreloader</w>
+      <w>cuongchan</w>
+      <w>kinh</w>
+      <w>nghiem</w>
       <w>textdomain</w>
       <w>uglify</w>
       <w>wordpress</w>
       <w>wpdb</w>
+      <w>wpps</w>
     </words>
   </dictionary>
 </component>

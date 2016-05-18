@@ -6,51 +6,136 @@
  * Date: 5/13/16
  * Time: 6:15 PM
  */
-use Guzzle\Http\Client;
+
+use \Symfony\Component\DomCrawler\Crawler as DomCrawler;
 
 class WPPostScraperCrawler
 {
-    private $baseUrl;
+    /**
+     * URL to thw website will be crawled
+     *
+     * @var string
+     */
+    public $url;
 
     /**
-     * @var array
+     * The receipt handle from SQS, used to identify the message when interacting with the queue
+     *
+     * @var string
      */
-    private static $instance;
+    public $receipt_handle;
 
     /**
-     * @param string $url
-     * @return WPPostScraperCrawler
+     * WPPostScraperCrawler constructor.
+     * Construct the object with message data and optional receipt_handle if relevant
+     *
+     * @param string|array $data
+     * @param string $receipt_handle
      */
-    public static function getInstance($url)
+    public function __construct($data, $receipt_handle = '')
     {
-        if (!self::$instance[$url])
-            self::$instance[$url] = new static($url);
-        return self::$instance[$url];
+        if (is_string($data)) {
+            $data = json_decode($data, true);
+        }
+
+        $this->url = $data['url'];
+        $this->receipt_handle = $receipt_handle;
     }
 
-    function __construct($clientUrl)
+    /**
+     * Returns the data of the message as a JSON string
+     * @return string
+     */
+    public function asJson()
     {
-        $this->baseUrl = $clientUrl;
-        $this->client = new Client($this->baseUrl);
+        return json_encode(array(
+            "url" => $this->url
+        ));
+    }
+
+    public function process()
+    {
+        $base = 'http://www.cuongchan.com/kinh-nghiem/';
+        $client = new \Guzzle\Http\Client($base);
+        $url = str_replace($base, "", $this->url);
+        echo "[Crawler] GET: $url\n";
+
+        $request = $client->get($url);
+        $response = $request->send();
+        $crawler = new \Symfony\Component\DomCrawler\Crawler($response->getBody(true));
+
+        $filter = $crawler->filter("li.list-post>article");
+        if (iterator_count($filter) == 0) {
+            //post content here
+            $this->crawl_single_post($crawler->filter(".inner-post-entry"));
+        } else {
+            //post category here, iterate over items
+            $filter->each(function ($content) {
+                $this->crawl_category_items($content);
+            });
+
+            //category navigation
+            $pagination = $crawler->filter(".older>a");
+            if ($pagination->count() > 0) {
+                WPPostScraperQueue::sendNewMessage(new WPPostScraperCrawler(array(
+                    "url" => $pagination->attr("href")
+                )));
+            }
+        }
     }
 
     /**
-     * @var \Guzzle\Http\Client
+     * @param string|DomCrawler $content
      */
-    private $client;
-
-    /**
-     * @return Client
-     */
-    public function getClient()
+    private function crawl_category_items($content)
     {
-        return $this->client;
+        /**
+         * @var DomCrawler $crawler
+         */
+        if (is_string($content))
+            $crawler = new \Symfony\Component\DomCrawler\Crawler($content);
+        else
+            $crawler = $content;
+
+        //get original post ID
+        $original_id = $crawler->attr("id");
+        if ($original_id != null)
+            $original_id = str_replace("post-", "", $original_id);
+
+        //get original post title and link
+        $filter = $crawler->filter(".grid-title>a");
+
+        $title = $filter->text();
+        $link = $filter->attr("href");
+        echo "[Crawler]: crawled with ID = $original_id, title = \"$title\"\n";
+
+        $queue = new WPPostScraperQueue(WPPS_QUEUE_NAME, array(
+            'region' => 'ap-southeast-1',
+            'credentials' => array(
+                'key' => AWS_ACCESS_KEY_ID,
+                'secret' => AWS_SECRET_ACCESS_KEY
+            )
+        ));
+        $queue->send(new WPPostScraperCrawler(array(
+            "url" => $link
+        )));
     }
 
-    public function crawl($url, $callback)
+    /**
+     * @param string|DomCrawler $content
+     */
+    private function crawl_single_post($content)
     {
-        $response = $this->client->get($url)->send();
+        /**
+         * @var DomCrawler $crawler
+         */
+        if (is_string($content))
+            $crawler = new \Symfony\Component\DomCrawler\Crawler($content);
+        else
+            $crawler = $content;
 
-        return $callback(new \Symfony\Component\DomCrawler\Crawler($response->getBody(true)));
+        $body = $crawler->filter('.inner-post-entry')->html();
+        $body_length = strlen($body);
+        echo "[Crawler]: body length = $body_length\n";
     }
 }

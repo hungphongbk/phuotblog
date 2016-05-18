@@ -16,7 +16,13 @@ class WPPostScraper
      * @var WPPostScraperView
      */
     private $view;
+
     private $percentage;
+
+    /**
+     * @var integer
+     */
+    private $pid;
 
     /**
      * @param string $actionName
@@ -52,7 +58,7 @@ class WPPostScraper
     public function adminPage()
     {
         // Load languages
-        $lang_path = WP_POST_SCRAPER_PATH . '/lang/';
+        $lang_path = WPPS_PATH . '/lang/';
         load_plugin_textdomain(self::PLUGIN_TEXTDOMAIN, false, $lang_path);
 
         // Define AJAX post action
@@ -82,7 +88,7 @@ class WPPostScraper
 
     public function adminPage_enqueueScripts()
     {
-        $src = plugins_url('assets/build/main.js', WP_POST_SCRAPER_MAIN);
+        $src = plugins_url('assets/build/main.js', WPPS_MAIN);
         wp_enqueue_script('wp_post_scraper_js', $src, array('jquery'));
 
         wp_localize_script('wp_post_scraper_js', 'ajaxObj', array(
@@ -90,9 +96,38 @@ class WPPostScraper
         ));
     }
 
+    /**
+     *
+     */
     public function adminPage_crawl()
     {
-        header("Content-Type: Application/json");
+        $workerAction = isset($_REQUEST['worker']) ? $_REQUEST['worker'] : '';
+        echo $workerAction . "\n";
+        if (!empty($workerAction)) {
+            if ($workerAction == 'start') {
+                $command = "php " . WPPS_PATH . "/crawl-worker.php";
+                $log_file = WPPS_PATH . "/log.txt";
+                $this->pid = (int)exec("$command >$log_file 2>&1 & echo $!");
+                echo "background worker started with pid = $this->pid";
+
+                $message = new WPPostScraperCrawler(array(
+                    "url" => "http://www.cuongchan.com/kinh-nghiem/"
+                ));
+
+                WPPostScraperQueue::sendNewMessage($message);
+            } else {
+                echo "PID = $this->pid\n";
+                if ($this->pid == 0) {
+                    echo "no process running!";
+                } else {
+                    exec("kill $this->pid 2>&1", $status);
+                    echo "background process terminated :)\n";
+                    echo implode("\n", $status);
+                    $this->pid = 0;
+                }
+            }
+        }
+        /*header("Content-Type: Application/json");
         $url = isset($_REQUEST['crawl_url']) ? $_REQUEST['crawl_url'] : '';
         $base = "http://www.cuongchan.com/ky-su/";
 
@@ -130,7 +165,7 @@ class WPPostScraper
             return $rs;
         });
 
-        echo json_encode($result);
+        echo json_encode($result);*/
         exit(0);
     }
 }

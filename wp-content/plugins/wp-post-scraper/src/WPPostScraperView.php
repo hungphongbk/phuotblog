@@ -8,8 +8,8 @@
  */
 class WPPostScraperView extends \Philo\Blade\Blade
 {
-    private static $viewDir = WP_POST_SCRAPER_PATH . '/view';
-    private static $cacheDir = WP_POST_SCRAPER_PATH . '/cache';
+    private static $viewDir = WPPS_PATH . '/view';
+    private static $cacheDir = WPPS_PATH . '/cache';
 
     private static $staticInstance;
 

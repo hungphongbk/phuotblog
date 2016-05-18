@@ -10,32 +10,11 @@ Author URI: http://URI_Of_The_Plugin_Author
 License: A "Slug" license name e.g. GPL2
 */
 
-if (!defined('WP_POST_SCRAPER_PATH')) {
-    define('WP_POST_SCRAPER_PATH', dirname(__FILE__));
-}
-if (!defined('WP_POST_SCRAPER_MAIN')) {
-    define('WP_POST_SCRAPER_MAIN', __FILE__);
-}
-// for dummy
-if (!defined('DB_HOST')) {
-    define('DB_HOST', 'local');
-}
-if (!defined('DB_NAME')) {
-    define('DB_NAME', 'wordpress');
-}
-if (!defined('DB_USER')) {
-    define('DB_USER', 'root');
-}
-if (!defined('DB_PASSWORD')) {
-    define('DB_PASSWORD', '');
+if (!defined('WPPS_MAIN')) {
+    define('WPPS_MAIN', __FILE__);
 }
 
-// end dummy
-require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/src/WPPostScraper.php';
-require_once __DIR__ . '/src/Database.php';
-require_once __DIR__ . '/src/WPPostScraperView.php';
-require_once __DIR__ . '/src/WPPostScraperCrawler.php';
+require_once __DIR__ . '/config.php';
 
 $instance = new WPPostScraper();
 
