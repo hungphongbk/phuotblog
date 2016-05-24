@@ -6,15 +6,22 @@
  * Time: 11:08 AM
  */
 
+$short_options = "k:";
+$short_options .= "s:";
+$short_options .= "r::";
+
+$options = getopt($short_options);
+
 require_once __DIR__ . '/config.php';
 
-$queue = new WPPostScraperQueue(WPPS_QUEUE_NAME, array(
-    'region' => 'ap-southeast-1',
+WPPostScraperQueue::setAwsCredentials(array(
+    'region' => isset($options['r']) ? $options['r'] : 'ap-southeast-1',
     'credentials' => array(
-        'key' => AWS_ACCESS_KEY_ID,
-        'secret' => AWS_SECRET_ACCESS_KEY
+        'key' => $options['k'],
+        'secret' => $options['s']
     )
 ));
+$queue = new WPPostScraperQueue(WPPS_QUEUE_NAME);
 echo "MessageQueue initialized!\n";
 while (true) {
     $message = $queue->receive();

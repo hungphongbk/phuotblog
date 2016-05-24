@@ -27,11 +27,6 @@ if (!defined('DB_PASSWORD')) {
 }
 // end dummy
 
-if (!(defined('AWS_ACCESS_KEY_ID') && defined('AWS_SECRET_ACCESS_KEY'))) {
-    define('AWS_ACCESS_KEY_ID', 'AKIAJHET6EOIMHVKBYXQ');
-    define('AWS_SECRET_ACCESS_KEY', '8JnM+WCTMhyrYtp9ngGbBH36QpdlzwPXnrk9Sbes');
-}
-
 require_once __DIR__ . '/vendor/autoload.php';
 
 require_once __DIR__ . '/src/CrawledPost.php';

@@ -11,18 +11,22 @@ use \Symfony\Component\DomCrawler\Crawler;
 class WPPostScraper
 {
     const PLUGIN_TEXTDOMAIN = 'wp-post-scraper';
-    private $adminPageSlug = '/admin-page.php';
+    private $adminPageSlug = '/wpps-admin-page.php';
+    private $settings = [
+        'aws-credentials-access-key',
+        'aws-credentials-secret'
+    ];
+
     /**
      * @var WPPostScraperView
      */
     private $view;
 
-    private $percentage;
-
     /**
      * @var integer
      */
     private $pid;
+
 
     /**
      * @param string $actionName
@@ -64,6 +68,12 @@ class WPPostScraper
         // Define AJAX post action
         $crawlAction = static::getAction('crawl');
         add_action('wp_ajax_' . $crawlAction, array($this, 'adminPage_crawl'));
+        add_action('wp_ajax_' . static::getAction('aws_form'), array($this, 'adminPage_getAwsInputForm'));
+
+        // Add settings
+        foreach ($this->settings as $setting) {
+            register_setting('wp-post-scraper-settings-group', $setting);
+        }
     }
 
     public function adminPage_adminMenu()
@@ -83,7 +93,9 @@ class WPPostScraper
 
     public function adminPage_content()
     {
-        $this->view->renderView('index');
+        $this->view->renderView('index', array(
+            'aws_exists' => $this->checkForAws()
+        ));
     }
 
     public function adminPage_enqueueScripts()
@@ -102,10 +114,18 @@ class WPPostScraper
     public function adminPage_crawl()
     {
         $workerAction = isset($_REQUEST['worker']) ? $_REQUEST['worker'] : '';
+
         echo $workerAction . "\n";
         if (!empty($workerAction)) {
             if ($workerAction == 'start') {
+                $aws_credentials = $this->getAwsCredentials();
+                WPPostScraperQueue::setAwsCredentials(array(
+                    'region' => 'ap-southeast-1',
+                    'credentials' => $aws_credentials
+                ));
+
                 $command = "php " . WPPS_PATH . "/crawl-worker.php";
+                $command .= " -k " . $aws_credentials['key'] . " -s " . $aws_credentials['secret'];
                 $log_file = WPPS_PATH . "/log.txt";
                 $this->pid = (int)exec("$command >$log_file 2>&1 & echo $!");
                 echo "background worker started with pid = $this->pid";
@@ -167,5 +187,42 @@ class WPPostScraper
 
         echo json_encode($result);*/
         exit(0);
+    }
+
+    /**
+     * Get AWS Input Form
+     */
+    public function adminPage_getAwsInputForm()
+    {
+        $this->view->renderView('part.aws', array(
+            'aws_exists' => false
+        ));
+
+        exit(0);
+    }
+
+    /**
+     * @return bool
+     */
+    public function checkForAws()
+    {
+        $aws_access_key = get_option('aws-credentials-access-key');
+        if (!$aws_access_key) return false;
+
+        $force_reveal = false;
+        if (isset($_GET['force-reveal-credentials'])) $force_reveal = true;
+
+        return !$force_reveal;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAwsCredentials()
+    {
+        return array(
+            'key' => get_option('aws-credentials-access-key'),
+            'secret' => get_option('aws-credentials-secret')
+        );
     }
 }

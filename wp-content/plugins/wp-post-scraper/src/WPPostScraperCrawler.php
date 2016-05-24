@@ -109,14 +109,7 @@ class WPPostScraperCrawler
         $link = $filter->attr("href");
         echo "[Crawler]: crawled with ID = $original_id, title = \"$title\"\n";
 
-        $queue = new WPPostScraperQueue(WPPS_QUEUE_NAME, array(
-            'region' => 'ap-southeast-1',
-            'credentials' => array(
-                'key' => AWS_ACCESS_KEY_ID,
-                'secret' => AWS_SECRET_ACCESS_KEY
-            )
-        ));
-        $queue->send(new WPPostScraperCrawler(array(
+        $queue = WPPostScraperQueue::sendNewMessage(new WPPostScraperCrawler(array(
             "url" => $link
         )));
     }

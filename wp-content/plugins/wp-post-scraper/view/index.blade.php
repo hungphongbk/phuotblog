@@ -1,5 +1,7 @@
 @extends('layout.base')
 @section('content')
+    @include('part.aws')
+    <hr>
     <form class="form-crawl">
         <input type="hidden" name="action" value="{{ WPPostScraper::getAction('crawl') }}">
         <input type="radio" name="worker" value="start">Start

@@ -13,22 +13,38 @@ class WPPostScraperQueue
 
     private $url;
 
-    private $aws_credentials;
+    //private $aws_credentials;
 
     private $sqs_client;
+
+    private static $aws_credentials;
+
+    /**
+     * @return mixed
+     */
+    protected static function getAwsCredentials()
+    {
+        return self::$aws_credentials;
+    }
+
+    /**
+     * @param mixed $aws_credentials
+     */
+    public static function setAwsCredentials($aws_credentials)
+    {
+        self::$aws_credentials = $aws_credentials;
+    }
 
     /**
      * WPPostScraperQueue constructor.
      * @param $name
-     * @param $aws_credentials
      */
-    public function __construct($name, $aws_credentials)
+    public function __construct($name)
     {
         try {
             $this->name = $name;
-            $this->aws_credentials = $aws_credentials;
 
-            $this->sqs_client = \Aws\Sqs\SqsClient::factory($this->aws_credentials);
+            $this->sqs_client = \Aws\Sqs\SqsClient::factory(static::getAwsCredentials());
 
             $this->url = $this->sqs_client->getQueueUrl(array(
                 "QueueName" => $this->name
@@ -113,13 +129,7 @@ class WPPostScraperQueue
      */
     public static function sendNewMessage($message)
     {
-        $queue = new WPPostScraperQueue(WPPS_QUEUE_NAME, array(
-            'region' => 'ap-southeast-1',
-            'credentials' => array(
-                'key' => AWS_ACCESS_KEY_ID,
-                'secret' => AWS_SECRET_ACCESS_KEY
-            )
-        ));
+        $queue = new WPPostScraperQueue(WPPS_QUEUE_NAME);
         $queue->send($message);
     }
 }

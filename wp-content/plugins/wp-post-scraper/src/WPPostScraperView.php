@@ -18,7 +18,7 @@ class WPPostScraperView extends \Philo\Blade\Blade
      */
     public static function getInstance()
     {
-        if(!self::$staticInstance){
+        if (!self::$staticInstance) {
             self::$staticInstance = new static(self::$viewDir, self::$cacheDir);
         }
         return self::$staticInstance;
@@ -26,10 +26,12 @@ class WPPostScraperView extends \Philo\Blade\Blade
 
     /**
      * @param string $viewName
+     * @param array $data
      */
-    public function renderView($viewName){
+    public function renderView($viewName, $data = [])
+    {
         /** @var \Illuminate\View\Factory $view */
         $view = $this->view();
-        echo $view->make($viewName)->render();
+        echo $view->make($viewName, $data)->render();
     }
 }

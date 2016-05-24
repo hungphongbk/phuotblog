@@ -7,7 +7,6 @@ Warning: PHP Startup: Unable to load dynamic library '/usr/local/opt/php56-pthre
   Expected in: flat namespace
  in /usr/local/opt/php56-pthreads/pthreads.so in Unknown on line 0
 MessageQueue initialized!
-Waiting for incoming message...
 [Crawler] GET: 
 [Crawler]: crawled with ID = 3448, title = "5 ứng dụng điện thoại giúp chuyến đi bạn tuyệt vời hơn"
 [Crawler]: crawled with ID = 3434, title = "Top 5 vùng biển thịch hợp cho mùa du lịch 30/4"
@@ -19,20 +18,41 @@ Waiting for incoming message...
 [Crawler]: crawled with ID = 1842, title = "Hướng dẫn du lịch Siem Reap – 4 ngày 3 đêm từ HCm"
 [Crawler]: crawled with ID = 2901, title = "Plan Xuyên Việt của Cuồng Chân Phần 3- Tây bắc,đông bắc"
 [Crawler]: crawled with ID = 2899, title = "Plan Xuyên Việt của Cuồng Chân Phần 2- Bắc trung bộ"
-[Crawler] GET: top-8-hon-dao.html
-[Crawler]: body length = 14909
-[Crawler] GET: 5-ung-dung-dien-thoai-giup-chuyen-di-ban-tuyet-voi-hon.html
-[Crawler]: body length = 6940
-[Crawler] GET: vung-bien-thu-hut-mua-he.html
-[Crawler]: body length = 7478
 [Crawler] GET: len-kinh-phi-cho-1-chuyen-di.html
 [Crawler]: body length = 5305
+[Crawler] GET: top-8-hon-dao.html
+[Crawler]: body length = 14909
 [Crawler] GET: doi-thong-rop-mau-vang-da-quy-cach-da-lat-25km.html
 [Crawler]: body length = 5018
-[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-2-bac-trung-bo.html
-[Crawler]: body length = 5791
+[Crawler] GET: 
+[Crawler]: crawled with ID = 3448, title = "5 ứng dụng điện thoại giúp chuyến đi bạn tuyệt vời hơn"
+[Crawler]: crawled with ID = 3434, title = "Top 5 vùng biển thịch hợp cho mùa du lịch 30/4"
+[Crawler]: crawled with ID = 3412, title = "5 vùng biển xanh Việt Nam thu hút trong mùa hè này"
+[Crawler]: crawled with ID = 3343, title = "Lên kinh phí cho 1 chuyến đi như thế nào?"
+[Crawler]: crawled with ID = 3252, title = "Mẹo book phòng giá rẻ trên Agoda"
+[Crawler]: crawled with ID = 3234, title = "Đồi thông rợp màu vàng Dã Quỳ cách Đà Lạt 25km"
+[Crawler]: crawled with ID = 3231, title = "Tôi viết 6 điều này hy vọng sẽ có ích cho chuyến đi của bạn"
+[Crawler]: crawled with ID = 1842, title = "Hướng dẫn du lịch Siem Reap – 4 ngày 3 đêm từ HCm"
+[Crawler]: crawled with ID = 2901, title = "Plan Xuyên Việt của Cuồng Chân Phần 3- Tây bắc,đông bắc"
+[Crawler]: crawled with ID = 2899, title = "Plan Xuyên Việt của Cuồng Chân Phần 2- Bắc trung bộ"
+[Crawler] GET: 5-ung-dung-dien-thoai-giup-chuyen-di-ban-tuyet-voi-hon.html
+[Crawler]: body length = 6940
+[Crawler] GET: huong-dan-du-lich-siem-reap-4-ngay-3-dem-tu-hcm.html
+[Crawler]: body length = 13601
+[Crawler] GET: vung-bien-thu-hut-mua-he.html
+[Crawler]: body length = 7478
 [Crawler] GET: meo-book-phong-gia-re-tren-agoda.html
 [Crawler]: body length = 10101
+[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-3-tay-bacdong-bac.html
+[Crawler]: body length = 6857
+[Crawler] GET: meo-book-phong-gia-re-tren-agoda.html
+[Crawler]: body length = 10101
+[Crawler] GET: vung-bien-thu-hut-mua-he.html
+[Crawler]: body length = 7478
+[Crawler] GET: toi-viet-6-dieu-nay-hy-vong-se-co-ich-cho-chuyen-di-cua-ban.html
+[Crawler]: body length = 9712
+[Crawler] GET: huong-dan-du-lich-siem-reap-4-ngay-3-dem-tu-hcm.html
+[Crawler]: body length = 13601
 [Crawler] GET: page/2/
 [Crawler]: crawled with ID = 2896, title = "Plan Xuyên Việt của Cuồng Chân Phần 1- Đường biển"
 [Crawler]: crawled with ID = 1778, title = "Bụi Cam Thái Lào – Review cách đưa xe máy qua cửa khẩu"
@@ -44,30 +64,29 @@ Waiting for incoming message...
 [Crawler]: crawled with ID = 1402, title = "Kinh nghiệm chạy xe đường đèo"
 [Crawler]: crawled with ID = 1370, title = "Dự báo “sự di cư” của dân thích du lịch bụi dịp 30/4"
 [Crawler]: crawled with ID = 1301, title = "Rong ruổi đường ven biển Việt Nam từ Bà Rịa tới Lăng Cô Huế- Hướng dẫn chi tiết"
-[Crawler] GET: toi-viet-6-dieu-nay-hy-vong-se-co-ich-cho-chuyen-di-cua-ban.html
-[Crawler]: body length = 9712
-[Crawler] GET: huong-dan-du-lich-siem-reap-4-ngay-3-dem-tu-hcm.html
-[Crawler]: body length = 13601
-[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-3-tay-bacdong-bac.html
-[Crawler]: body length = 6857
-[Crawler] GET: review-dua-xe-may-va-he-thong-duong-sa-di-bui-campuchia-thai-lao.html
-[Crawler]: body length = 9509
-[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-1-duong-bien.html
-[Crawler]: body length = 7424
-[Crawler] GET: map-me-ung-dung-chi-duong-che-do-may-bay-van-xai-duoc.html
-[Crawler]: body length = 3774
-[Crawler] GET: kham-pha-cu-lao-cham.html
-[Crawler]: body length = 10442
-[Crawler] GET: tra-loi-6-cau-hoi-thuong-gap-cho-dan-muon-bui-di-campuchia.html
-[Crawler]: body length = 2648
-[Crawler] GET: binh-ba-huong-dan-chi-tiet-di-du-lich-binh-ba.html
-[Crawler]: body length = 8152
-[Crawler] GET: kinh-nghiem-chay-xe-duong-deo.html
-[Crawler]: body length = 6022
 [Crawler] GET: xe-may-di-koh-rong-samloem-campuchia-chi-tiet.html
 [Crawler]: body length = 9989
-[Crawler] GET: du-bao-su-di-cu-cua-dan-thich-du-lich-bui-dip-304.html
-[Crawler]: body length = 5926
+[Crawler] GET: 5-ung-dung-dien-thoai-giup-chuyen-di-ban-tuyet-voi-hon.html
+[Crawler]: body length = 6940
+[Crawler] GET: top-8-hon-dao.html
+[Crawler]: body length = 14909
+[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-2-bac-trung-bo.html
+[Crawler]: body length = 5791
+[Crawler] GET: page/2/
+[Crawler]: crawled with ID = 2896, title = "Plan Xuyên Việt của Cuồng Chân Phần 1- Đường biển"
+[Crawler]: crawled with ID = 1778, title = "Bụi Cam Thái Lào – Review cách đưa xe máy qua cửa khẩu"
+[Crawler]: crawled with ID = 1763, title = "Bụi Cam Thái Lào – Cách đi bụi Koh Rong Samloem bằng xe máy"
+[Crawler]: crawled with ID = 1750, title = "Map.me – Ứng dụng chỉ đường chế độ máy bay vẫn xài được"
+[Crawler]: crawled with ID = 1713, title = "Trả lời 6 câu hỏi thường gặp cho dân muốn bụi  đi Campuchia"
+[Crawler]: crawled with ID = 1595, title = "Khám phá Cù Lao Chàm"
+[Crawler]: crawled with ID = 1531, title = "Bình Ba- hướng dẫn chi tiết đi du lịch Bình Ba"
+[Crawler]: crawled with ID = 1402, title = "Kinh nghiệm chạy xe đường đèo"
+[Crawler]: crawled with ID = 1370, title = "Dự báo “sự di cư” của dân thích du lịch bụi dịp 30/4"
+[Crawler]: crawled with ID = 1301, title = "Rong ruổi đường ven biển Việt Nam từ Bà Rịa tới Lăng Cô Huế- Hướng dẫn chi tiết"
+[Crawler] GET: xe-may-di-koh-rong-samloem-campuchia-chi-tiet.html
+[Crawler]: body length = 9989
+[Crawler] GET: map-me-ung-dung-chi-duong-che-do-may-bay-van-xai-duoc.html
+[Crawler]: body length = 3774
 [Crawler] GET: rong-ruoi-duong-ven-bien-viet-nam-chi-tiet.html
 [Crawler]: body length = 33009
 [Crawler] GET: page/3/
@@ -81,47 +100,51 @@ Waiting for incoming message...
 [Crawler]: crawled with ID = 1039, title = "Đảo Hải Tặc Kiên Giang hoang sơ siêu đẹp có hướng dẫn chi tiết"
 [Crawler]: crawled with ID = 1005, title = "Sưu tầm: Một số hiệu lệnh khi đi đoàn xe máy nên biết"
 [Crawler]: crawled with ID = 774, title = "Kinh nghiệm độc hành của Tuân Cuồng Chân"
-[Crawler] GET: cach-lam-thit-op-bo-mon-an-than-thanh-cho-dan-bui.html
-[Crawler]: body length = 9569
-[Crawler] GET: page/4/
-[Crawler]: crawled with ID = 578, title = "Tớ đã ăn và ở đâu, khám phá gì trong 2 đêm 1 ngày ở Đà Lạt"
-[Crawler]: crawled with ID = 416, title = "Hướng dẫn du lịch bụi Nam Du quần đảo hoang sơ tuyệt đẹp"
-[Crawler]: crawled with ID = 254, title = "Hướng dẫn đi Lý Sơn Quảng Ngãi 1500k ăn ngon, ngủ đã, chơi sướng"
-[Crawler]: crawled with ID = 215, title = "Cách đi Cực Đông Mũi Đôi 2 ngày 2 đêm 1300k 1 người"
-[Crawler]: crawled with ID = 210, title = "Plan thô chinh phục Cực Đông Mũi Đôi 10 người"
-[Crawler]: crawled with ID = 103, title = "Kinh nghiệm phượt mũi Kê Gà điểm đổi gió gần Sài Gòn"
+[Crawler] GET: len-kinh-phi-cho-1-chuyen-di.html
+[Crawler]: body length = 5305
+[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-2-bac-trung-bo.html
+[Crawler]: body length = 5791
+[Crawler] GET: map-me-ung-dung-chi-duong-che-do-may-bay-van-xai-duoc.html
+[Crawler]: body length = 3774
+[Crawler] GET: tra-loi-6-cau-hoi-thuong-gap-cho-dan-muon-bui-di-campuchia.html
+[Crawler]: body length = 2648
+[Crawler] GET: doi-thong-rop-mau-vang-da-quy-cach-da-lat-25km.html
+[Crawler]: body length = 5018
+[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-1-duong-bien.html
+[Crawler]: body length = 7424
+[Crawler] GET: review-dua-xe-may-va-he-thong-duong-sa-di-bui-campuchia-thai-lao.html
+[Crawler]: body length = 9509
+[Crawler] GET: rong-ruoi-duong-ven-bien-viet-nam-chi-tiet.html
+[Crawler]: body length = 33009
+[Crawler] GET: binh-ba-huong-dan-chi-tiet-di-du-lich-binh-ba.html
+[Crawler]: body length = 8152
+[Crawler] GET: kham-pha-cu-lao-cham.html
+[Crawler]: body length = 10442
+[Crawler] GET: du-bao-su-di-cu-cua-dan-thich-du-lich-bui-dip-304.html
+[Crawler]: body length = 5926
 [Crawler] GET: du-bui-lich-mien-tay.html
 [Crawler]: body length = 21216
-[Crawler] GET: vinh-hy-thich-hop-doi-gio-cuoi-tuan.html
-[Crawler]: body length = 8809
-[Crawler] GET: bai-viet-nay-danh-cho-nhung-ban-lau-dau-tien-di.html
-[Crawler]: body length = 8705
-[Crawler] GET: du-lich-bui-phan-rang-thap-cham.html
-[Crawler]: body length = 10780
-[Crawler] GET: huong-dan-di-ly-son-quang-ngai-1500k-an-ngon-ngu-da-choi-suong.html
-[Crawler]: body length = 9706
-[Crawler] GET: kinh-nghiem-du-lich-an-giang-vung-dat-co-qua-nhieu-noi-de-di.html
-[Crawler]: body length = 13730
-[Crawler] GET: 3-noi-nen-di-trong-thang-10-uu-tien-mien-tay-nuoc-noi.html
-[Crawler]: body length = 7328
-[Crawler] GET: dao-hai-tac-hoang-so-nen-di-khi-ghe-ha-tien-kien-giang.html
-[Crawler]: body length = 9337
-[Crawler] GET: to-da-an-va-o-dau-kham-pha-gi-trong-2-dem-1-ngay-o-da-lat.html
-[Crawler]: body length = 8053
-[Crawler] GET: cach-di-cuc-dong-mui-doi-2-ngay-2-dem-1tr300k-1-nguoi.html
-[Crawler]: body length = 10046
-[Crawler] GET: kinh-nghiem-phuot-mui-ke-ga-diem-doi-gio-gan-sai-gon.html
-[Crawler]: body length = 12160
-[Crawler] GET: suu-tam-mot-so-hieu-lenh-khi-di-doan-xe-may-nen-biet.html
-[Crawler]: body length = 10030
-[Crawler] GET: huong-dan-du-lich-bui-nam-du-quan-dao-hoang-so-tuyet-dep.html
-[Crawler]: body length = 8446
-[Crawler] GET: kinh-nghiem-doc-hanh-cua-tuan-cuong-chan.html
-[Crawler]: body length = 10248
-[Crawler] GET: plan-tho-chinh-phuc-cuc-dong-mui-doi-10-nguoi.html
-[Crawler]: body length = 8308
-Waiting for incoming message...
-Waiting for incoming message...
-Waiting for incoming message...
-Waiting for incoming message...
-Waiting for incoming message...
+[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-1-duong-bien.html
+[Crawler]: body length = 7424
+[Crawler] GET: binh-ba-huong-dan-chi-tiet-di-du-lich-binh-ba.html
+[Crawler]: body length = 8152
+[Crawler] GET: toi-viet-6-dieu-nay-hy-vong-se-co-ich-cho-chuyen-di-cua-ban.html
+[Crawler]: body length = 9712
+[Crawler] GET: tra-loi-6-cau-hoi-thuong-gap-cho-dan-muon-bui-di-campuchia.html
+[Crawler]: body length = 2648
+[Crawler] GET: plan-xuyen-viet-cua-cuong-chan-phan-3-tay-bacdong-bac.html
+[Crawler]: body length = 6857
+[Crawler] GET: kinh-nghiem-chay-xe-duong-deo.html
+[Crawler]: body length = 6022
+[Crawler] GET: kinh-nghiem-chay-xe-duong-deo.html
+[Crawler]: body length = 6022
+[Crawler] GET: page/3/
+[Crawler]: crawled with ID = 1271, title = "Cách làm thịt ốp bô món ăn thần thánh cho dân bụi"
+[Crawler]: crawled with ID = 1234, title = "Du lịch bụi Phan Rang Tháp Chàm"
+[Crawler]: crawled with ID = 1207, title = "Rong ruổi miền Tây bằng xe máy có núi, có sông, có hồ, có biển."
+[Crawler]: crawled with ID = 1186, title = "Vĩnh Hy thích hợp  đổi gió cuối tuần"
+[Crawler]: crawled with ID = 1144, title = "Bài viết này dành cho những bạn lầu đầu tiên đi"
+[Crawler]: crawled with ID = 1081, title = "Kinh nghiệm du lịch An Giang vùng đất có quá nhiều nơi để đi"
+[Crawler]: crawled with ID = 1061, title = "3 nơi nên đi trong tháng 10 – ưu tiên miền tây nước nổi"
+[Crawler]: crawled with ID = 1039, title = "Đảo Hải Tặc Kiên Giang hoang sơ siêu đẹp có hướng dẫn chi tiết"
+[Crawler]: crawled with ID = 1005, title = "Sưu tầm: Một số hiệu lệnh khi đi đoàn xe máy nên biết"
