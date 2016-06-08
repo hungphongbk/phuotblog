@@ -1,3 +1,0 @@
-<footer class="content-info" role="contentinfo">
-    <?php echo  dynamic_sidebar('sidebar-footer') ; ?>
-</footer>

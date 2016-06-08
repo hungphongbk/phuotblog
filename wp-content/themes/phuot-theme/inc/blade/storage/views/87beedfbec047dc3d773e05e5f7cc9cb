@@ -1,4 +1,0 @@
-<header>
-    <h2 class="entry-title"><?php echo  the_title() ; ?></h2>
-    <?php echo view('templates.includes.entry-meta')->with(get_defined_vars())->render(); ?>
-</header>

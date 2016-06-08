@@ -1,4 +1,0 @@
-<?php // /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/themes/phuot-theme/image.php ?>
-<?php
-//wp_redirect(get_permalink($post->post_parent));
-var_dump($post->post_parent);

@@ -1,8 +1,0 @@
-<?php // /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/themes/phuot-theme/single.php ?>
-
-<?php \Laravel\Section::start('page-content'); ?>
-
-<?php echo view('templates.content.single')->with(get_defined_vars())->render(); ?>
-
-<?php \Laravel\Section::stop(); ?>
-<?php echo view('templates.layouts.sidebar')->with(get_defined_vars())->render(); ?>

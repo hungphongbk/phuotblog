@@ -1,9 +1,0 @@
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php echo view('templates.content.content')->with(get_defined_vars())->render(); ?>
-<?php if(false): ?>
-    <?php echo view('templates.includes.comments')->with(get_defined_vars())->render(); ?>
-<?php endif; ?>
-
-<?php endwhile; ?><?php else: ?>
-<?php echo view('templates.content.empty')->with(get_defined_vars())->render(); ?>
-<?php endif; wp_reset_postdata(); ?>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2a58bad-da49-47e1-82e7-02b57efc1c91" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/06eadbe44fedacd9ecae0cb095081261" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/075865b08243bfe82a48031d85fbfb92" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/089de472637e9dbf8da400e8e90228b3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/0dbc73f3bdb97d5b48c310b5c5f116dc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/2c2f6ae85a5f4436fab38c62e4cd891e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/2cccdb4101904cbef35e8ef156296ae0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/2fcf23529725314e6b72b991d2f00025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/398881d29f5c2739d76e5c7f8f2635d7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/3fdadf569299f2e4ae4f1532cb08f262" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/407d1d130119d578275d56a03b97a005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/4474f9d00cfc93439b0f4a17b0af6f5b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/44d796744e33da53d14e5c73034ee38f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/4672fce271c35e7cffcbc0e5687b8249" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/4801b7d380c6ff993522e9a28a78972d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/4cf88d68f24e6f2d3300afca97caf1ff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/5baaace3c6905a659c2f35cdcecef8ef" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/639965c03a838bdd1f2d2dfac3c8d8c5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/67cd2350586b52c8ad3b79ddcc3b95c0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/6cbe4fd06c17708b34b92268512194bf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/72d493e014317d0942c1d6f7e79cabb6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/753ed4926cc57d4a2b7a400a9ab424e6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/7992d40a3a3c8dd10eb5d6f3eec13bf7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/7f8970def1c9f620e284db18984bdddc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/87beedfbec047dc3d773e05e5f7cc9cb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/8bd2dd395e10c7b2a64736febc847fdd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/914cf1b268fe1df81de4852cc165f1e2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/9760234dfe29ebc4d101f3c1ea56c352" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/9ec137d44f6dc342e33572d8b9fe204a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/bae1394dd27c764200af6baa28323301" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/c0e1979540c154fd8f79c7088faa57a0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/cee3fd1faa1d56b866d5c00fa5268bbf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/cf1fa896694e2b85938c896adc897ba1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/d264b245b247e948944073c86d83e924" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/d3c60d57d15afbd983f8a0490a403d44" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/dcab757d30fa69c06820913412442949" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/inc/blade/storage/views/f3c4cb5e445f80c96ee6ad225f1453e4" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/dataSources.ids" afterPath="$PROJECT_DIR$/../../../.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.gitignore" afterPath="$PROJECT_DIR$/../../../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.htaccess" afterPath="$PROJECT_DIR$/../../../.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/blog.iml" afterPath="$PROJECT_DIR$/../../../.idea/blog.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../wp-config.php" afterPath="$PROJECT_DIR$/../../../wp-config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../themes/phuot-theme/.gitignore" afterPath="$PROJECT_DIR$/../../themes/phuot-theme/.gitignore" />
+    </list>
+    <ignored path="composer-demo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="composer-demo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="composer-demo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer-demo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="WordPress Main Plugin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6">
+    <include_path>
+      <path value="$USER_HOME$/Libs/wordpress" />
+      <path value="." />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="57" />
+    <option name="y" value="24" />
+    <option name="width" value="1309" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="composer-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="composer-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="composer-demo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.smarty" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2a58bad-da49-47e1-82e7-02b57efc1c91" name="Default" comment="" />
+      <created>1465393730377</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1465393730377</updated>
+      <workItem from="1465393732501" duration="1039000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1039000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="57" y="24" width="1309" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980901" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>$USER_HOME$/Libs/wordpress</wordpressPath>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/composer-demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
